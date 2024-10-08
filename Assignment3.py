@@ -15,4 +15,10 @@ class hashTable:
     def hashing(self):
         #goal is to add a hash function
         exit
+
+    def insert(self,val):
+        exit
+    
+    def size(self):
+        return self.size
     

@@ -13,5 +13,6 @@ class hashTable:
         self.bucket = [None] * self.defaultCapacity()
     
     def hashing(self):
+        #goal is to add a hash function
         exit
     

@@ -1,4 +1,5 @@
 
+from _collections_abc import 
 import random
 
 class item:
@@ -7,7 +8,7 @@ class item:
         self.value = v
         self.next = None
 
-class hashTable:
+class hashTable(MapBase):
     def __init__(self, defCap, primer):
         self.defaultCapacity = defCap
         self.size = 0
@@ -35,8 +36,9 @@ class hashTable:
         # a and b are random numbers from 0 to p - 1
         return (self.a + self.hash(k) * self.b) % self.p % len(self.bucket)
 
-    def insert(self,val):
-        exit
+    def insert(self,key,val):
+        newIndex = self.hashCompress(key)
+
     
     def size(self):
         return len(self.bucket)

@@ -42,4 +42,7 @@ class hashTable:
         return len(self.bucket)
     
 newHash = hashTable(256,12312313)
-newHash.hash("ziggy")
+print(newHash.hashCompress("ziggy"))
+print(newHash.hashCompress("edwin"))
+print(newHash.hashCompress("cool"))
+
